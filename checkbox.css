@@ -1,0 +1,35 @@
+.regions {
+    display: grid;
+    background-color: green;
+    grid-template-columns: 0.7fr 1.3fr repeat(3, 1fr);
+}
+
+.check-wrapper {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 3px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.8em;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+.regions>div:last-child {
+    border-right: none;
+}
+
+.check-wrapper>input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    cursor: pointer;
+    z-index: -999;
+}
+
+
+

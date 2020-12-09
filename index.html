@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sea of Thieves Island Finder</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./checkbox.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="search-wrapper">
+            <input type="text" id="search" placeholder="Search">
+            <button id="filters">Filters: <span id="filter-icon"></span></button>
+        </div>
+        <div class="regions">
+            <div class="check-wrapper region_selected">
+                All
+                <input type="checkbox" id="all" class="region-box" checked>
+            </div>
+            <div class="check-wrapper">
+                The Shores Of Plenty
+                <input type="checkbox" id="shores" class="region-box">
+            </div>
+            <div class="check-wrapper">
+                Ancient Isles
+                <input type="checkbox" id="isles" class="region-box">
+            </div>
+            <div class="check-wrapper">
+                The Wilds
+                <input type="checkbox" id="wilds" class="region-box">
+            </div>
+            <div class="check-wrapper">
+                Devil's Roar
+                <input type="checkbox" id="devil" class="region-box">
+            </div>
+        </div>
+    </div>
+    <div class="island-wrapper">
+        <ul class="island-list">
+            <!-- template block -->
+            <li class="island" id="placeholder">
+                <img src="./imgs/islands/AncientSpireOutpostMap.png" class="island-img">
+                <div class="info-wrapper">
+                    <div class="title-wrapper">
+                        <h3 class="island-name">The Spoils Of Plenty Store:</h3>
+                        <h3 class="island-coor">Q-12</h3>
+                    </div>
+                    <ul class="details">
+                        <li class="island-region">Region: The Wilds</li>
+                        <li class="island-type">Type: Uncharted</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
+<script src="./islands.data.js"></script>
+<script src="./app.js"></script>

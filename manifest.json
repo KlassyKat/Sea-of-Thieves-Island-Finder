@@ -1,0 +1,21 @@
+{
+    "name": "Island Finder",
+    "short_name": "Island Finder",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#002A26",
+    "theme_color": "#002A26",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/imgs/icons/logo512",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "/imgs/icons/logo192",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
+    ]
+}
