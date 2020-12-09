@@ -1,5 +1,5 @@
 //Service Worker
-if('serviceWorker' in navitor) {
+if('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js')
         .then((res) => {
             console.log(console.log("Service Worker Registered", res))
