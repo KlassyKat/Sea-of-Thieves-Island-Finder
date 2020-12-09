@@ -3,15 +3,15 @@ const ASSETS = [
     '/',
     // '/fonts',
     // '/imgs',
-    '/index.html',
-    '/app.js',
-    '/style.css',
-    '/checkbox.css'
+    './index.html',
+    './app.js',
+    './style.css',
+    './checkbox.css'
 ]
 
 //Install Service Worker
-self.addEventListener('install', (e) => {
-    e.waitUntil(
+self.addEventListener('install', (evt) => {
+    evt.waitUntil(
         caches.open(STATIC_CACHE)
             .then(cache => {
                 cache.addAll(ASSETS);
@@ -20,16 +20,16 @@ self.addEventListener('install', (e) => {
 });
 
 //Activate Service Worker
-self.addEventListener('activate', (e) => {
+self.addEventListener('activate', (evt) => {
     console.log('Service Worker Active');
 })
 
 //Fetch Events
-self.addEventListener('fetch', (e) => {
-    e.respondWith(
-        caches.match(e.request)
+self.addEventListener('fetch', (evt) => {
+    evt.respondWith(
+        caches.match(evt.request)
             .then(cacheRes => {
-                return cacheRes || fetch(e.request);
+                return cacheRes || fetch(evt.request);
             })
     )
 })
