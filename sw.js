@@ -1,12 +1,12 @@
 const STATIC_CACHE = 'site-static';
 const ASSETS = [
     '/',
-    '/fonts',
-    '/imgs',
+    // '/fonts',
+    // '/imgs',
     '/index.html',
     '/app.js',
     '/style.css',
-    '/checkboc.css'
+    '/checkbox.css'
 ]
 
 //Install Service Worker
