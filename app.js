@@ -1,3 +1,13 @@
+//Service Worker
+if('serviceWorker' in navitor) {
+    navigator.serviceWorker.register('/sw.js')
+        .then((res) => {
+            console.log(console.log("Service Worker Registered", res))
+        }).catch(err=> {
+            console.log("Service Worker not Registered", err);
+        })
+}
+
 let regionSelect = {
     'All': true,
     'Shores Of Plenty': false,
