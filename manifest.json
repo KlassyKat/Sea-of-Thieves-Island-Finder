@@ -1,7 +1,7 @@
 {
     "name": "Island Finder",
     "short_name": "Island Finder",
-    "start_url": "/index.html",
+    "start_url": "./index.html",
     "display": "standalone",
     "background_color": "#002A26",
     "theme_color": "#002A26",
