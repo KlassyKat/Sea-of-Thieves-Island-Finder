@@ -12,7 +12,7 @@ const ASSETS = [
 //Install Service Worker
 self.addEventListener('install', (e) => {
     e.waitUntil(
-        cache.open(STATIC_CACHE)
+        caches.open(STATIC_CACHE)
             .then(cache => {
                 cache.addAll(ASSETS);
             })
