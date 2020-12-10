@@ -602,7 +602,7 @@ let islands = {
             },
         },
         'Devil\'s Roar': {
-            'Molten Snads Fortress': {
+            'Molten Sands Fortress': {
                 MapImg: './imgs/islands/MoltenSandsFortressMap.png',
                 DistImg: '',
                 coor: 'Z-11',
